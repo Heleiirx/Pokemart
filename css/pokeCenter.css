@@ -1,0 +1,58 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+@font-face {
+    font-family: 'Pokefont';
+    src: url(Radhiumz.ttf);
+}
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: #262425;
+}
+/* div.info {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.bg-image {
+    opacity: .6;
+    z-index: -1;
+    position: relative;
+    left: 10%;
+    top: 5%;
+}
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    width: 100%;
+    margin-top: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div.left>img.enfermera{
+    padding-top: 15%;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    top: -30%;
+}
+div.left>img.chansey{
+    width: 60%;
+    position: relative;
+    left: 10%;
+    top: -50%;
+    z-index: 1;
+}
+div.right>img{
+    width: 60%;
+}
+article{
+    padding-top: 15%;
+}
