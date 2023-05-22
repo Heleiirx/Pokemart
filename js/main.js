@@ -1,5 +1,5 @@
 $(function(){
-    $('#header').load('html/header.html', function (){
+    $('#header').load('/html/header.html', function (){
         $('#search').on("mouseover", function () {
             console.log("hover");
             $('#searchbar').focus();
@@ -9,7 +9,7 @@ $(function(){
         console.log("Cargó header");
     });
     
-    $('#footer').load('html/footer.html', function(){
+    $('#footer').load('../html/footer.html', function(){
         console.log("Cargó footer");
     });
 });
