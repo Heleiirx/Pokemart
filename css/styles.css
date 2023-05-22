@@ -1,53 +1,65 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
+
 @font-face {
     font-family: 'Pokefont';
     src: url(../css/fonts/Radhiumz.ttf);
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url(../css/fonts/RobotoRegular-3m4L.ttf);
 }
-body{
+
+body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
     color: #262425;
 }
-h5, h2{
+
+h5,
+h2 {
     font-family: 'Pokefont', sans-serif;
     text-align: center;
     display: inline-block;
 }
-dt{
+
+dt {
     font-family: 'Roboto', sans-serif;
 }
-.espejear{
+
+.espejear {
     transform: scaleX(-1);
 }
-.banner{
+
+.banner {
     width: 100%;
     margin-top: 15px;
 }
-.not-style{
+
+.not-style {
     text-decoration: none;
     color: #262425;
 }
-.not-style:hover{
+
+.not-style:hover {
     color: #8FC067;
 }
+
 /*-----------------------------------------------------------------------------*/
 /*-------------------------------Inicia header---------------------------------*/
 /*------------------------------------------------------------------------------*/
-header{
+header {
     width: 100%;
     box-sizing: border-box;
     padding: 0 30px;
 }
+
 /*----------------------------Navbar logo---------------------------------*/
-nav{
+nav {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,28 +68,34 @@ nav{
         "logo logo icons icons icons"
         "nav nav nav nav nav";
 }
-img.logo{
+
+img.logo {
     grid-area: logo;
     width: 40%;
     padding-top: 30px;
     align-self: center;
 }
+
 div>.icon {
     width: 50px;
     height: 50px;
 }
-i.bi{
+
+i.bi {
     font-size: 35px;
     color: #262425;
 }
-i.bi-header:hover{
+
+i.bi-header:hover {
     color: #8FC067;
 }
-svg.bi.bi-search{
+
+svg.bi.bi-search {
     width: 35px;
     fill: #262425;
     padding-top: 4px;
 }
+
 div.icons {
     grid-area: icons;
     display: flex;
@@ -85,33 +103,40 @@ div.icons {
     justify-self: right;
     gap: 20px;
 }
-.atajos{
+
+.atajos {
     border-top: 2px solid #8FC067;
 }
-#shopCart{
+
+#shopCart {
     padding-bottom: 5px;
 }
+
 /*----------------------------search button---------------------------------*/
-.search{
+.search {
     height: 50px;
     border-radius: 50px;
     margin-top: 30px;
     transform: translate(0, -50%);
     display: flex;
 }
-.search:hover>.search--input{
+
+.search:hover>.search--input {
     width: 240px;
     padding: 6px;
     outline: none;
     cursor: pointer;
 }
-.search--input:hover>svg.bi{
+
+.search--input:hover>svg.bi {
     outline: none;
 }
-.search:hover{
+
+.search:hover {
     background: rgba(143, 192, 103, 1);
 }
-.search--button{
+
+.search--button {
     float: right;
     width: 50px;
     height: 50px;
@@ -120,14 +145,17 @@ div.icons {
     transition: 1s;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.search--button:hover{
+
+.search--button:hover {
     transform: rotate(360deg) scale(.5);
     transition: 1s;
 }
-.search--input{
+
+.search--input {
     border: none;
     background: none;
     float: left;
@@ -136,85 +164,105 @@ a{
     width: 0px;
     font-weight: bold;
 }
+
 /*----------------------------Account button---------------------------------*/
-.nav-button{
+.nav-button {
     width: 50px;
     height: 50px;
     background: none;
     cursor: pointer;
     border: none;
 }
+
 /*----------------------------Navbar P&S---------------------------------*/
-nav > div.atajos{
+nav>div.atajos {
     grid-area: nav;
     font-weight: bold;
     font-family: 'Pokefont', sans-serif;
     font-size: larger;
 }
-div.atajos{
-   display: flex;
-   flex-direction: row;
-   gap: 20px;
+
+div.atajos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
+
 h5>a {
     display: inline-block;
     margin-right: 20px;
     text-decoration: none;
     color: #262425;
 }
-h5>a:hover{
+
+h5>a:hover {
     color: #8FC067;
 }
+
 /*----------------------------Dropdown Catalogo---------------------------------*/
-.dropdown-catalogo-top{
+.dropdown-catalogo-top {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     column-gap: 20px;
     width: max-content;
 }
-.dropdown-catalogo-bottom{
+
+.dropdown-catalogo-bottom {
     display: grid;
     grid-template-columns: repeat(2, 250px);
 }
-hr.dropdown-divider{
+
+hr.dropdown-divider {
     background: #8FC067;
     opacity: 1;
     height: 2px;
     width: 90%;
+    border-radius: .5px;
 }
-a.dropdown-item:hover{
+
+a.dropdown-item:hover {
     color: #8FC067;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.dropdown-subtitulos{
+
+.dropdown-subtitulos {
     display: flex;
     width: max-content;
     align-items: center;
     padding-left: 15px;
 }
-.icons-dropdown{
+
+.icons-dropdown {
     width: 50px;
 }
+
 /* .subtitulo-dropdown {
     display: inline-block;
 } */
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------Inicia Body index---------------------------------*/
 /*--------------------------------------------------------------------------------*/
-h1{
+h1 {
     text-align: center;
     font-family: 'Pokefont', sans-serif;
     font-weight: bold;
     /* font-size: x-large; */
     margin-top: 30px;
 }
-.featured-products{
+
+a.footer:hover {
+    color: #FFE439;
+}
+
+.featured-products {
     display: flex;
     justify-content: space-around;
     margin: 50px 0;
 }
+
 .circle {
     background: rgb(0, 31, 41);
     border-radius: 50%;
@@ -225,144 +273,183 @@ h1{
     justify-content: center;
     /* box-shadow: 14px 11px 23px 3px rgba(0, 0, 0, 0.62); */
 }
-div.circle>img{
+
+div.circle>img {
     height: 200px;
 }
 
-div.anuncio{
+div.anuncio {
     height: 650px;
     background-image: url(../assets/img/lapras-bg.jpg);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template: 
-    "img texto texto texto"
-    "img card card card"
-    "img card card card";
+    grid-template:
+        "img texto texto texto"
+        "img card card card"
+        "img card card card";
     place-items: center;
 }
-div.anuncio .pkmn-png{
+
+div.anuncio .pkmn-png {
     width: 400px;
     grid-area: img;
 }
-div.anuncio h1{
+
+div.anuncio h1 {
     border-bottom: 2px #262425 solid;
 }
-div.cards{
+
+div.cards {
     grid-area: card;
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
-div.card>img{
+
+div.card>img {
     height: 200px;
     width: 200px;
     align-self: center;
 }
-div.card-body > a.btn{
+
+div.card-body>a.btn {
     align-self: center;
 }
 
-div.services{
+div.services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "entrenadores pokecenter adopciones"
-    "servicios servicios servicios";
-    column-gap: 5px;    
+    grid-template-areas:
+        "entrenadores pokecenter adopciones";
+    column-gap: 5px;
 }
-.servicios-titulos{
+
+div.card.servicios {
+    border: none;
+}
+
+div.card-body {
+    display: flex;
+}
+
+.servicios-titulos {
     grid-area: servicios;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 5px;
 }
-div.pokecenter{
+
+div.pokecenter {
     grid-area: pokecenter;
     background-position: center;
 }
-div.trainer{
+
+div.trainer {
     grid-area: entrenadores;
-    background-position: center;
 }
-div.adoption{
+
+div.adoption {
     grid-area: adopciones;
 }
-.bg-image{
+
+.bg-image {
     opacity: .6;
     width: 25%;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
 }
-div.trainer>img.rojo{
+
+img.rojo {
     width: 53%;
     z-index: 1;
-}
-div.trainer>img.blastoise{
-    width: 95%;
     position: relative;
     left: 0;
     top: 0;
 }
-.enfermera{
+
+img.blastoise {
+    width: 95%;
+    position: absolute;
+    bottom: 17%;
+    left: 10%;
+}
+
+.enfermera {
     width: 30%;
 }
-.pkmn-pc{
+
+.pkmn-pc {
     width: 50%;
     z-index: 1;
+    position: absolute;
+    bottom: 15%;
 }
-.adopcion{
-    width: 60%;
+
+.adopcion {
+    width: 80%;
 }
+
 /*----------------------------------------------------------------------------------*/
 /*---------------------------------Inicia footer-----------------------------------*/
 /*--------------------------------------------------------------------------------*/
-footer{
-background: #8FC067;
-padding: 40px 0 40px 0;
-margin-top: 150px;
+footer {
+    background: #8FC067;
+    padding: 40px 0 40px 0;
+    margin-top: 50px;
 }
-div.col > img.logo{
+
+div.col>img.logo {
     width: 60%;
     align-self: center;
     margin-bottom: 10px;
 }
+
 .social {
     align-self: center;
     display: flex;
     gap: 25px;
     margin-bottom: 20px;
 }
-.bi-footer{
+
+.bi-footer {
     display: inline-block;
 }
-.bi-footer:hover{
+
+.bi-footer:hover {
     color: #FFE439;
 }
-a.scroll-up{
+
+a.scroll-up {
     position: fixed;
     display: flex;
     bottom: 10;
     right: 10;
     z-index: 1;
 }
-div.col{
+
+div.col {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-self: center;
     line-height: 30px;
 }
-dt:hover{
+
+a.footer:hover {
     color: #FFE439;
 }
+
 div.col>a {
     text-decoration: none;
     color: #262425;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-.btn-suscribe{
+
+.btn-suscribe {
     align-self: center;
     color: #fff;
     background: #262425;
@@ -372,7 +459,8 @@ div.col>a {
     border-radius: 10px;
     transition: 1s;
 }
-.btn-suscribe:hover{
+
+.btn-suscribe:hover {
     font-weight: bold;
     font-size: large;
     color: #262425;
@@ -380,18 +468,26 @@ div.col>a {
     transform: scale(1.1);
     transition: 1s;
 }
-hr.footer-item{
+
+hr.footer-item {
     margin-top: 25px;
     color: #262425;
 }
+
+.footer-cp {
+    text-align: center;
+}
+
 /*---------------------------------Modal inicio de sesion-----------------------------------*/
-.modalbg{
+.modalbg {
     background: center url(../assets/img/modal-bg.jpg);
 }
-nav>button.modal-button{
+
+nav>button.modal-button {
     background: none;
     outline: none;
 }
+
 .form-container {
     width: 320px;
     border-radius: 0.75rem;
@@ -470,10 +566,12 @@ nav>button.modal-button{
     font-weight: 600;
     transition: 1s;
 }
-.sign:hover{
+
+.sign:hover {
     transform: scale(1.2);
     transition: 1s;
 }
+
 .social-message {
     display: flex;
     align-items: center;
