@@ -181,7 +181,6 @@ hr.dropdown-divider{
     opacity: 1;
     height: 2px;
     width: 90%;
-    border-radius: .5px;
 }
 a.dropdown-item:hover{
     color: #8FC067;
@@ -210,9 +209,6 @@ h1{
     font-weight: bold;
     /* font-size: x-large; */
     margin-top: 30px;
-}
-a.footer:hover{
-    color: #FFE439;
 }
 .featured-products{
     display: flex;
@@ -270,15 +266,11 @@ div.card-body > a.btn{
 div.services{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "entrenadores pokecenter adopciones";
+    "entrenadores pokecenter adopciones"
+    "servicios servicios servicios";
     column-gap: 5px;    
-}
-div.card.servicios{
-    border: none;
-}
-div.card-body{
-    display: flex;
 }
 .servicios-titulos{
     grid-area: servicios;
@@ -293,6 +285,7 @@ div.pokecenter{
 }
 div.trainer{
     grid-area: entrenadores;
+    background-position: center;
 }
 div.adoption{
     grid-area: adopciones;
@@ -300,22 +293,16 @@ div.adoption{
 .bg-image{
     opacity: .6;
     width: 25%;
-    position: absolute;
-    bottom: 3%;
-    right: 3%;
 }
-img.rojo{
+div.trainer>img.rojo{
     width: 53%;
     z-index: 1;
+}
+div.trainer>img.blastoise{
+    width: 95%;
     position: relative;
     left: 0;
     top: 0;
-}
-img.blastoise{
-    width: 95%;
-    position: absolute;
-    bottom: 17%;
-    left: 10%;
 }
 .enfermera{
     width: 30%;
@@ -323,11 +310,9 @@ img.blastoise{
 .pkmn-pc{
     width: 50%;
     z-index: 1;
-    position: absolute;
-    bottom: 15%;
 }
 .adopcion{
-    width: 80%;
+    width: 60%;
 }
 /*----------------------------------------------------------------------------------*/
 /*---------------------------------Inicia footer-----------------------------------*/
@@ -335,7 +320,7 @@ img.blastoise{
 footer{
 background: #8FC067;
 padding: 40px 0 40px 0;
-margin-top: 50px;
+margin-top: 150px;
 }
 div.col > img.logo{
     width: 60%;
@@ -398,9 +383,6 @@ div.col>a {
 hr.footer-item{
     margin-top: 25px;
     color: #262425;
-}
-.footer-cp{
-    text-align: center;
 }
 /*---------------------------------Modal inicio de sesion-----------------------------------*/
 .modalbg{
