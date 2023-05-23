@@ -13,22 +13,8 @@ body {
     font-size: 23px;
     color: #262425;
 }
-.bg-image {
-    opacity: .6;
-    z-index: -1;
-    position: relative;
-    left: 10%;
-    top: 5%;
-}
-.info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5px;
-    width: 100%;
-    margin-top: 50px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.col{
+    height: fit-content;
 }
 img.enfermera{
     width: 40%;
@@ -38,12 +24,20 @@ img.enfermera{
 }
 .comfey{
     width: 45%;
-    z-index: 1;
+    z-index: -1;
 }
 img.chansey{
     width: 55%;
     position: relative;
     z-index: 1;
+}
+div.right{
+    display: block;
+}
+.blissey{
+    width: 50%;
+    display: inline;
+    float: right;
 }
 div.right>img{
     width: 60%;
