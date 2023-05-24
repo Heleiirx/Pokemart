@@ -13,6 +13,18 @@ body {
     font-size: 23px;
     color: #262425;
 }
+.divider-left{
+    background-color: #8fc067;
+    height: 5px;
+    width: 70%;
+}
+.divider-right{
+    background-color: #8fc067;
+    height: 5px;
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
 .col{
     height: fit-content;
 }
