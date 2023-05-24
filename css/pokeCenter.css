@@ -30,9 +30,6 @@ body {
 }
 img.enfermera{
     width: 40%;
-    /* position: relative;
-    left: 50%;
-    top: -30%; */
 }
 .comfey{
     width: 45%;
@@ -69,4 +66,9 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+/** ----------------------------Body Trainers---------------------------------- **/
+img.entrenadores{
+    width: 50px;
+    height: auto;
 }
