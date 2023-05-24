@@ -177,7 +177,6 @@ a {
 /*----------------------------Navbar P&S---------------------------------*/
 nav>div.atajos {
     grid-area: nav;
-    font-weight: bold;
     font-family: 'Pokefont', sans-serif;
     font-size: larger;
 }

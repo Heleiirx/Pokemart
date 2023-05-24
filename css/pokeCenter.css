@@ -34,6 +34,9 @@ img.chansey{
 div.right{
     display: block;
 }
+article.pokecenter{
+    padding: 0;
+}
 .blissey{
     width: 50%;
     display: inline;
@@ -49,4 +52,9 @@ article{
 .servicios-pokemart{
     width: 220px;
     height: auto;
+}
+.map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
