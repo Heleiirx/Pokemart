@@ -328,7 +328,7 @@ div.card.servicios {
     border: none;
 }
 
-div.card-body {
+div.card-servicios {
     display: flex;
 }
 

@@ -75,3 +75,23 @@ img.entrenadores{
     width: 200px;
     height: auto;
 }
+.row-entrenadores{
+    display: flex;
+}
+.rojo-entrenadores{
+    width: 25%;
+}
+.blastoise-entrenadores{
+    width: 45%;
+}
+/** ----------------------------Body About us---------------------------------- **/
+article.about-us{
+    text-align: justify;
+}
+div.opiniones{
+    display: flex;
+    justify-content: space-around;}
+div.opinion{
+    width: 30%;
+    border: none;
+}
