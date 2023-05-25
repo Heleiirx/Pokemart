@@ -54,10 +54,6 @@ article.pokecenter{
 div.right>img{
     width: 60%;
 }
-article{
-    padding-top: 15%;
-}
-
 .servicios-pokemart{
     width: 220px;
     height: auto;
@@ -69,6 +65,6 @@ article{
 }
 /** ----------------------------Body Trainers---------------------------------- **/
 img.entrenadores{
-    width: 50px;
+    width: 200px;
     height: auto;
 }
