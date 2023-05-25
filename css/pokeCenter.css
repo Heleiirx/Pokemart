@@ -64,6 +64,13 @@ div.right>img{
     justify-content: center;
 }
 /** ----------------------------Body Trainers---------------------------------- **/
+main.entrenadores{
+    display: grid;
+    text-align: justify;
+}
+article.entrenadores{
+    padding: 0 3%;
+}
 img.entrenadores{
     width: 200px;
     height: auto;
