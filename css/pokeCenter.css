@@ -95,3 +95,35 @@ div.opinion{
     width: 30%;
     border: none;
 }
+/** ----------------------------Body Adopciones---------------------------------- **/
+img.adopciones{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+div.pasos-adopcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.adopcion{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: block;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+.ash-pasos{
+    width: 180px;
+}
+.pokeball-pasos{
+    width: 50px;
+    z-index: 2;
+    position: relative;
+    right: 30px;
+    top: 20px;
+}

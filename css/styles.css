@@ -263,7 +263,6 @@ a.footer:hover {
 }
 
 .circle {
-    background: rgb(0, 31, 41);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -394,10 +393,18 @@ img.blastoise {
 /*----------------------------------------------------------------------------------*/
 /*---------------------------------Inicia footer-----------------------------------*/
 /*--------------------------------------------------------------------------------*/
+div.footer-img{
+    margin-top: 50px;
+    display: grid;
+}
+.footer-img{
+    width: 25%;
+    margin-left: 50%;
+}
 footer {
+    margin-top: 90px;
     background: #8FC067;
     padding: 40px 0 40px 0;
-    margin-top: 50px;
 }
 
 div.col>img.logo {
