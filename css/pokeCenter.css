@@ -76,13 +76,27 @@ img.entrenadores{
     height: auto;
 }
 .row-entrenadores{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.right-entrenadores{
+    display: block;
+}
+.charizard-entrenadores{
+    width: 55%;
+    z-index: 1;
+    left: 5%;
 }
 .rojo-entrenadores{
     width: 25%;
+    z-index: 3;
+    position: relative;
 }
 .blastoise-entrenadores{
     width: 45%;
+    z-index: 2;
+    right: 5%;
+    top: 0;
 }
 /** ----------------------------Body About us---------------------------------- **/
 article.about-us{
