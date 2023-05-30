@@ -63,6 +63,9 @@ div.right>img{
     flex-wrap: wrap;
     justify-content: center;
 }
+.pokecenter-servicios>.card{
+    min-width: calc(100% / 6);    
+}
 /** ----------------------------Body Trainers---------------------------------- **/
 main.entrenadores{
     display: grid;
