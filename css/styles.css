@@ -201,7 +201,7 @@ h5>a:hover {
 /*----------------------------Dropdown Catalogo---------------------------------*/
 .dropdown-catalogo-top {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(3, 300px);
     column-gap: 20px;
     width: max-content;
 }
