@@ -18,13 +18,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
    
     const showNavbar = (toggleId, navId, bodyId, headerId) =>{
         const toggle = document.getElementById(toggleId);
-        console.log("Toggle declarado:::->" + toggle);
         nav = document.getElementById(navId);
-        console.log("nav declarado:::->" + nav);
         bodypd = document.getElementById(bodyId);
-        console.log("bodypd declarado:::->" + bodypd);
         headerpd = document.getElementById(headerId);
-        console.log("headerpd declarado:::->" + headerpd);
         
         // Validate that all variables exist
         if(toggle && nav && bodypd && headerpd){

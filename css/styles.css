@@ -261,12 +261,16 @@ a.footer:hover {
     justify-content: space-around;
     margin: 50px 0;
 }
-
+.featured-products>a{
+    flex-shrink: 2;
+}
 .circle {
     align-self: center;
     border-radius: 50%;
     width: 200px;
+    min-width: 50px;
     height: 200px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,6 +279,9 @@ a.footer:hover {
 
 img.productos-inicio{
     height: 200px;
+    min-width: 50px;
+    min-height: 50px;
+
 }
 
 div.anuncio {
@@ -284,9 +291,9 @@ div.anuncio {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template:
-        "img texto texto texto"
-        "img card card card"
-        "img card card card";
+        "img texto"
+        "img card"
+        "img card";
     place-items: center;
 }
 
@@ -317,10 +324,11 @@ div.card-body>a.btn {
 }
 
 div.services {
-    display: grid;
+    display: flex;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        "entrenadores pokecenter adopciones";
+        "entrenadores pokecenter adopciones"; */
     column-gap: 5px;
 }
 
@@ -623,4 +631,26 @@ nav>button.modal-button {
     font-size: 0.75rem;
     line-height: 1rem;
     color: #262425;
+}
+
+@media (max-width: 770px){
+    .row{
+        flex-direction: column;
+    }
+    div.services{
+        flex-direction: column;
+        margin: 3rem 2rem;
+    }
+    .anuncio{
+        display: flex;
+        flex-direction: column;
+    }
+    /* div.anuncio{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .anuncio>div.cards{
+        width: 100%;
+    } */
 }
