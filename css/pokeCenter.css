@@ -308,4 +308,10 @@ div.accordion-body{
         grid-template-columns: 2fr 8fr;
 
     }
+    /*------------------------Body about us----------------------------------*/
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
