@@ -314,4 +314,9 @@ div.accordion-body{
         flex-direction: column;
         align-items: center;
     }
+    /*------------------------Body trainers----------------------------------*/
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
 }
