@@ -10,10 +10,10 @@
 body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+    /* font-size: 23px; */
     color: #262425;
 }
-.divider-left{
+/* .divider-left{
     background-color: #8fc067;
     height: 5px;
     width: 70%;
@@ -24,7 +24,7 @@ body {
     width: 70%;
     position: absolute;
     right: 0;
-}
+} */
 .col{
     height: fit-content;
 }
@@ -55,7 +55,7 @@ div.right>img{
     width: 60%;
 }
 .servicios-pokemart{
-    width: 220px;
+    width: 13.7rem;
     height: auto;
 }
 .map{
@@ -75,7 +75,7 @@ article.entrenadores{
     padding: 0 3%;
 }
 img.entrenadores{
-    width: 200px;
+    width: 12.5rem;
     height: auto;
 }
 .row-entrenadores{
@@ -125,8 +125,8 @@ div.pasos-adopcion{
 }
 div.adopcion{
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 18.7rem;
+    height: 18.7rem;
     display: block;
     /* display: flex;
     flex-direction: column;
@@ -135,14 +135,14 @@ div.adopcion{
     text-align: center;
 }
 .ash-pasos{
-    width: 180px;
+    width: 11.25rem;
 }
 .pokeball-pasos{
-    width: 50px;
+    width: 13.12rem;
     z-index: 2;
     position: relative;
-    right: 30px;
-    top: 20px;
+    right: 1.8rem;
+    top: 1.25rem;
 }
 /** ----------------------------Body Catalogo---------------------------------- **/
 :root {
@@ -162,7 +162,7 @@ div.adopcion{
     box-sizing: border-box
 }
 
-main{
+main.body{
     position: relative;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
