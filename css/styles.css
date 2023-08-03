@@ -638,7 +638,7 @@ nav>button.modal-button {
     color: #262425;
 }
 
-@media (max-width: 770px){
+@media (max-width: 1023px){
     .featured-products{
         margin: 1rem 0 2rem 0;
         gap: .1rem;
@@ -646,12 +646,12 @@ nav>button.modal-button {
         width: 100vw;
     }
     .circle{
-        width: calc(95vw/3);
-        height: calc(95vw/3);
+        width: calc(94vw/3);
+        height: calc(94vw/3);
     }
     img.productos-inicio{
         /* width: calc(100vw/3); */
-        height: calc(95vw/3);
+        height: calc(90vw/3);
     }
     .row{
         flex-direction: column;
@@ -670,18 +670,25 @@ nav>button.modal-button {
     h5.cardTitle_services{
         font-size: 2rem;
     }
-    .anuncio{
+    div.anuncio{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        padding: 4rem 0;
     }
     div.vitamin{
-        width: 90vw;
+        width: 100vw;
         margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    div.anuncio>.pkmn-png{
+        width: 80vw;
+        position: relative;
+        top: 3rem;
     }
     .card_vitamin{
         width: calc(90vw/3);
-        height: 30vh;
+        height: 35vh;
         box-sizing: border-box;
     }
     p.card-text{
@@ -698,10 +705,9 @@ nav>button.modal-button {
         width: calc(70vw/3);
     }
     div.anuncio h1{
-        /* display: none; */
         position: relative;
         font-size: 2.5rem;
-        bottom: 32rem;
+        bottom: 25rem;
         border: none;
     }
     div.movile{
