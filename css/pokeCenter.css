@@ -120,10 +120,12 @@ img.adopciones{
 }
 div.pasos-adopcion{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 div.adopcion{
+    position: relative;
     border-radius: 50%;
     width: 18.7rem;
     height: 18.7rem;
@@ -138,11 +140,11 @@ div.adopcion{
     width: 11.25rem;
 }
 .pokeball-pasos{
-    width: 13.12rem;
+    width: 5rem;
     z-index: 2;
-    position: relative;
-    right: 1.8rem;
-    top: 1.25rem;
+    position: absolute;
+    right: 15rem;
+    top: 12rem;
 }
 /** ----------------------------Body Catalogo---------------------------------- **/
 :root {
@@ -318,5 +320,16 @@ div.accordion-body{
     .presentacion{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 1023px){
+    div.presentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img.adopciones{
+        width: 90%;
     }
 }
