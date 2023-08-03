@@ -264,11 +264,14 @@ a.footer:hover {
     display: flex;
     justify-content: space-between;
     margin: 3.2rem 1.5rem;
+    flex-wrap: wrap;
 }
 .featured-products>a{
     flex-shrink: 2;
+    display: flex;
 }
 .circle {
+    flex-shrink: 2;
     align-self: center;
     border-radius: 50%;
     width: 13rem;
@@ -276,12 +279,12 @@ a.footer:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     /* box-shadow: 14px 11px 23px 3px rgba(0, 0, 0, 0.62); */
 }
 
 img.productos-inicio{
     height: 12.5rem;
+    flex-shrink: 2;
 }
 
 div.anuncio {
@@ -312,11 +315,15 @@ div.anuncio h1 {
     grid-area: texto;
 }
 
-div.cards {
+div.vitaminCards {
     grid-area: card;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+}
+
+.card-title{
+    top: 100.05%;
 }
 
 div.card>img {
@@ -331,10 +338,10 @@ div.card-body>a.btn {
 
 div.services {
     display: flex;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        "entrenadores pokecenter adopciones";
+        "entrenadores pokecenter adopciones"; */
     column-gap: .3rem;
 }
 
@@ -632,12 +639,36 @@ nav>button.modal-button {
 }
 
 @media (max-width: 770px){
+    .featured-products{
+        margin: 1rem 0 2rem 0;
+        gap: .1rem;
+        padding: .3rem;
+        width: 100vw;
+    }
+    .circle{
+        width: calc(95vw/3);
+        height: calc(95vw/3);
+    }
+    img.productos-inicio{
+        /* width: calc(100vw/3); */
+        height: calc(95vw/3);
+    }
     .row{
         flex-direction: column;
     }
     div.services{
         flex-direction: column;
         margin: 3rem 2rem;
+        gap: 3rem;
+    }
+    .card-title{
+        line-height: 1rem;
+        top: 100.05%;
+        font-size: .7rem;
+        text-align: center;
+    }
+    h5.cardTitle_services{
+        font-size: 2rem;
     }
     .anuncio{
         flex-direction: column;
@@ -648,8 +679,30 @@ nav>button.modal-button {
         width: 90vw;
         margin-top: 2rem;
     }
+    .card_vitamin{
+        width: calc(90vw/3);
+        height: 30vh;
+        box-sizing: border-box;
+    }
+    p.card-text{
+        font-size: .5rem;
+    }
+    h5.cardPrice{
+        font-size: .7rem;
+    }
+    div.card-body>a.btn {
+        height: 4vh;
+        font-size: .5rem;
+    }
+    div.card>img{
+        width: calc(70vw/3);
+    }
     div.anuncio h1{
-        display: none;
+        /* display: none; */
+        position: relative;
+        font-size: 2.5rem;
+        bottom: 32rem;
+        border: none;
     }
     div.movile{
         display: inline-block;
@@ -658,12 +711,6 @@ nav>button.modal-button {
         margin-bottom: .5rem;
 
     }
-    /* div.anuncio{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .anuncio>div.cards{
-        width: 100%;
-    } */
+
+
 }
