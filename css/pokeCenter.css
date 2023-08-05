@@ -283,9 +283,9 @@ div.accordion-body{
     margin-top: 3%;
     
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1023px) {
 
-    .header {
+    /* .header {
         height: calc(var(--header-height) + 1rem);
     }
 
@@ -309,7 +309,7 @@ div.accordion-body{
     .body-pd{
         grid-template-columns: 2fr 8fr;
 
-    }
+    } */
     /*------------------------Body about us----------------------------------*/
     .nosotros{
         display: flex;

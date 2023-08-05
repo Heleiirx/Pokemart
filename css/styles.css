@@ -16,6 +16,11 @@
     --title-font: 'Pokefont';
     --text-font: 'Roboto'
 }
+*,
+::before,
+::after {
+    box-sizing: border-box
+}
 
 body {
     width: 100%;
@@ -639,6 +644,56 @@ nav>button.modal-button {
 }
 
 @media (max-width: 1023px){
+/* -------------------------------------Header-------------------------------------- */
+    nav{
+        grid-template-areas: 
+        "logo logo"
+        "nav icons";
+    }
+    /* nav>a{
+        display: flex;
+        justify-content: center;
+    } */
+    div.atajos{
+        border: none;
+        width: 50vw;
+        &::after{
+            content: '';
+            /* display: block; */
+            position: absolute;
+            background-color: #8FC067;
+            width: 90vw;
+            height: .2rem;
+            top: 1rem;
+            left: 0vw;
+        }
+    }
+    nav img.logo{
+        position: relative;
+        left: 30vw;
+        width: 30vw;
+    }
+    div.icons{
+        width: 30vw;
+        position: relative;
+        top: .7rem;
+        right: 8.5rem;
+        z-index: 100;
+    }
+    .search>.search--input {
+        width: 20vw;
+        padding: 6px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .search--input>svg.bi {
+        outline: none;
+    }
+    
+    .search {
+        background: rgba(143, 192, 103, 1);
+    }
     .featured-products{
         margin: 1rem 0 2rem 0;
         gap: .1rem;
@@ -671,6 +726,7 @@ nav>button.modal-button {
         font-size: 2rem;
     }
     div.anuncio{
+        position: relative;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -678,17 +734,16 @@ nav>button.modal-button {
     }
     div.vitamin{
         width: 100vw;
+        height: fit-content;
         margin-top: 2rem;
         padding: 0 1rem;
     }
     div.anuncio>.pkmn-png{
         width: 80vw;
-        position: relative;
-        top: 3rem;
     }
     .card_vitamin{
         width: calc(90vw/3);
-        height: 35vh;
+        height: fit-content;
         box-sizing: border-box;
     }
     p.card-text{
@@ -702,12 +757,15 @@ nav>button.modal-button {
         font-size: .5rem;
     }
     div.card>img{
-        width: calc(70vw/3);
+        width: calc(85vw/3);
+        height: calc(85vw/3);
     }
     div.anuncio h1{
-        position: relative;
+        position: absolute;
         font-size: 2.5rem;
-        bottom: 25rem;
+        /* bottom: 25rem; */
+        top: 2rem;
+        left: 30%;
         border: none;
     }
     div.movile{
